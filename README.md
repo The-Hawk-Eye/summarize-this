@@ -4,7 +4,7 @@ This repository contains implementation of a text-summarization model and a keyw
  * *TextRank: Bringing Order into Texts* by Rada Mihalcea and Paul Tarau
  * *Graph-based Ranking Algorithms for Sentence Extraction, Applied to Text Summarization* by Rada Mihalcea
 
-The following model are implemented:
+The following models are implemented:
  * `text_summarizer.py` implements a text-summarization model that uses Google PageRank algorithm to rank sentences in a text. Every sentence is added as a vertex in a weighted graph. Edges between vertices are weighed according to the similarity score between sentences. Similarity between two sentences is measured as a function of their content overlap.
  * `keyword_extractor.py` implements a keyword-extraction model that uses Google PageRank algorithm to rank words in a text. Every word is added as a vertex in an unweighted graph. An edge between two vertices is added if the corresponding words co-occur within a window of a given size.
 
